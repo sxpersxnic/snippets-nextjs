@@ -7,5 +7,5 @@ npx create-next-app@latest <project-name> --example "https://github.com/sxpersxn
 
 # or
 
-git clone https://github.com/sxpersxnic/next-boilerplate.git
+git clone https://github.com/sxpersxnic/Next-Boilerplate.git
 ```
