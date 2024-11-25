@@ -23,6 +23,7 @@ export default [
 			'**/assets/',
 			'**/public/',
 			'**/*.sh',
+			'**/jest.config.ts',
 		],
 	},
 	...compat.extends(

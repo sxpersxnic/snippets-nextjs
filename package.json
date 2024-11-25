@@ -16,7 +16,9 @@
 		"db:drizzle:migrate": "node ./src/_scripts/drizzle-migrate.mjs",
 		"db:drizzle:push": "node ./src/_scripts/drizzle-push.mjs",
 		"db:prisma:migrate": "node ./src/_scripts/prisma-migrate.mjs",
-		"db:prisma:push": "node ./src/_scripts/prisma-push.mjs"
+		"db:prisma:push": "node ./src/_scripts/prisma-push.mjs",
+		"test": "jest",
+		"test:watch": "jets --watch"
 	},
 	"dependencies": {
 		"@heroicons/react": "^2.2.0",
@@ -32,6 +34,9 @@
 		"@eslint/js": "^9.15.0",
 		"@ianvs/prettier-plugin-sort-imports": "^4.4.0",
 		"@tailwindcss/forms": "^0.5.9",
+		"@testing-library/dom": "^10.4.0",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/react": "^16.0.1",
 		"@types/cli-progress": "^3.11.6",
 		"@types/node": "^22.9.3",
 		"@types/react": "^18.3.12",
@@ -48,6 +53,8 @@
 		"eslint-plugin-tailwindcss": "^3.17.5",
 		"eslint-plugin-unused-imports": "^4.1.4",
 		"inquirer": "^12.1.0",
+		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0",
 		"postcss": "^8.4.49",
 		"postcss-import": "^16.1.0",
 		"prettier": "^3.3.3",
@@ -58,6 +65,7 @@
 		"tailwind-merge": "^2.5.5",
 		"tailwindcss": "^3.4.15",
 		"tailwindcss-animate": "^1.0.7",
+		"ts-node": "^10.9.2",
 		"typescript": "^5.7.2",
 		"typescript-eslint": "^8.16.0"
 	}
