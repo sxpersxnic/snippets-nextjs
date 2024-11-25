@@ -23,7 +23,8 @@
 			"@/*": ["./src/*"],
 			"ui/*": ["./src/_ui/*"],
 			"lib/*": ["./src/_lib/*"],
-			"db/*": ["./src/_db/*"]
+			"db/*": ["./src/_db/*"],
+			"scripts/*": ["./src/_scripts/*"]
 		}
 	},
 	"include": [
