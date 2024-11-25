@@ -5,12 +5,10 @@ import cliProgress from 'cli-progress';
 
 const tasks = [
 	{
-		command: 'npx prettier --write .',
-		message: 'Formatting code with Prettier',
+		command: 'npx drizzle-kit generate',
+		message: 'Generating schema',
 	},
-	{ command: 'npx eslint .', message: 'Linting code with ESLint' },
-	{ command: 'bun update --latest', message: 'Updating dependencies' },
-	{ command: 'next start', message: 'Starting server on port: 3000' },
+	{ command: 'npx drizzle-kit migrate', message: 'Migrating' },
 ];
 
 const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.legacy);
@@ -19,15 +17,15 @@ try {
 	progressBar.start(tasks.length, 0);
 
 	tasks.forEach((task, index) => {
-		console.log(task.message);
+		console.log(' ', task.message);
 		execSync(task.command, { stdio: 'inherit' });
 		progressBar.update(index + 1);
 	});
 
 	progressBar.stop();
-	console.log('Start script executed successfully');
+	console.log('Database migration script executed successfully');
 } catch (err) {
 	progressBar.stop();
-	console.error('Error executing start script:', err);
+	console.error('Error executing database migration script:', err);
 	process.exit(1);
 }

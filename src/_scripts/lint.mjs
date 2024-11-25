@@ -8,15 +8,7 @@ const tasks = [
 		command: 'npx prettier --write .',
 		message: 'Formatting code with Prettier',
 	},
-	{ command: 'npx eslint .', message: 'Linting code with ESLint' },
-	{ command: 'bun update --latest', message: 'Updating dependencies' },
-	{ command: 'next build', message: 'Building application' },
-	{ command: 'git add .', message: 'Adding changes to git' },
-	{
-		command: 'git commit -m "Automated commit"',
-		message: 'Committing changes',
-	},
-	{ command: 'git push github main', message: 'Pushing changes to GitHub' },
+	{ command: 'next lint', message: 'Linting code with ESLint' },
 ];
 
 const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.legacy);
@@ -31,9 +23,9 @@ try {
 	});
 
 	progressBar.stop();
-	console.log('Deployment script executed successfully');
+	console.log('Linting script executed successfully');
 } catch (err) {
 	progressBar.stop();
-	console.error('Error executing deployment script:', err);
+	console.error('Error executing linting script:', err);
 	process.exit(1);
 }

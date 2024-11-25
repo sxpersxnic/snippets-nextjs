@@ -9,13 +9,11 @@ const tasks = [
 		message: 'Formatting code with Prettier',
 	},
 	{ command: 'npx eslint .', message: 'Linting code with ESLint' },
-	{ command: 'bun run build', message: 'Linting code with ESLint' },
+	{ command: 'bun update --latest', message: 'Updating dependencies' },
+	{ command: 'next build', message: 'Updating dependencies' },
 ];
 
-const progressBar = new cliProgress.SingleBar(
-	{},
-	cliProgress.Presets.shades_classic,
-);
+const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.legacy);
 
 try {
 	progressBar.start(tasks.length, 0);
@@ -27,9 +25,9 @@ try {
 	});
 
 	progressBar.stop();
-	console.log('Deployment script executed successfully');
+	console.log('Build script executed successfully');
 } catch (err) {
 	progressBar.stop();
-	console.error('Error executing deployment script:', err);
+	console.error('Error executing build script:', err);
 	process.exit(1);
 }

@@ -26,6 +26,12 @@
 			"db/*": ["./src/_db/*"]
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"src/_scripts/drizzle-migrate.mjs"
+	],
 	"exclude": ["node_modules"]
 }
