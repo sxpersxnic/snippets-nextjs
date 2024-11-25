@@ -9,13 +9,7 @@ const tasks = [
 		message: 'Formatting code with Prettier',
 	},
 	{ command: 'npx eslint .', message: 'Linting code with ESLint' },
-	{ command: 'bun update --latest', message: 'Updating dependencies' },
-	{ command: 'git add .', message: 'Adding changes to git' },
-	{
-		command: 'git commit -m "Automated commit"',
-		message: 'Committing changes',
-	},
-	{ command: 'git push github main', message: 'Pushing changes to GitHub' },
+	{ command: 'bun run build', message: 'Linting code with ESLint' },
 ];
 
 const progressBar = new cliProgress.SingleBar(

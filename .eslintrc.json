@@ -26,7 +26,7 @@
 		"@typescript-eslint/ban-ts-comment": "error", // Disallow TypeScript directive comments (e.g., @ts-ignore)
 		"@typescript-eslint/explicit-function-return-type": "error", // Require explicit return types on functions
 		"@typescript-eslint/explicit-module-boundary-types": "error", // Require explicit return and argument types on exported functions and classes
-		"capitalized-comments": ["warn", "always"], // Enforce capitalized comments
+		"capitalized-comments": ["off", "always"], // Enforce capitalized comments
 		"no-unused-expressions": "error", // Disallow unused expressions
 		"no-unused-vars": "error", // Disallow unused variables
 		"no-console": ["error", { "allow": ["warn", "error"] }], // Disallow console.log statements except for console.warn and console.error
