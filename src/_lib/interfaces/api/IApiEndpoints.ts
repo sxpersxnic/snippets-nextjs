@@ -2,10 +2,12 @@
 /* eslint-disable no-unused-vars */
 import HttpMethod from 'lib/enums/EHttpMethods';
 
-export default interface IApiEndpoint<REQ, RES> {
+export default interface IApiEndpoint {
 	url: string;
 	method: HttpMethod;
-	func: Promise<any>;
-	request?: REQ;
-	response?: RES;
+	handler: () => Promise<>;
+	payload: {
+	  request?: ;
+	  response?: ;
+	};
 }
