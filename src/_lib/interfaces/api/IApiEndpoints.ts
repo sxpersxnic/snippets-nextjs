@@ -1,7 +1,7 @@
 /* eslint-disable semi */
 /* eslint-disable no-unused-vars */
 import HttpMethod from 'lib/enums/EHttpMethods';
-import URI from 'lib/enums/EURL';
+import URI from 'lib/enums/EURI';
 import Request from './payload/request/IRequestDTO';
 import Response from './payload/response/IResponseDTO';
 
