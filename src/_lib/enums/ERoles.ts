@@ -1,4 +1,4 @@
-export default enum ERules {
+export default enum Roles {
   ADMIN = 'admin',
   MOD = 'mod',
   USER = 'user',
