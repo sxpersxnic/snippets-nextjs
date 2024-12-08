@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-enum EHttpMethod {
+export default enum EHttpMethod {
 	GET = 'get',
 	POST = 'post',
 	PUT = 'put',
@@ -10,5 +10,3 @@ enum EHttpMethod {
 	CONNECT = 'connect',
 	TRACE = 'trace'
 }
-
-export default EHttpMethod;
