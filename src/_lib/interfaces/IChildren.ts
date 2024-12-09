@@ -1,3 +1,3 @@
-export interface IChildren {
+export interface Children {
 	children: Readonly<React.ReactNode>;
 }

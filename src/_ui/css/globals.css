@@ -5,12 +5,18 @@
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
+	--accent: #171717;
+	--hoverfg: #171717;
+	--hoverbg: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background: #0a0a0a;
 		--foreground: #ededed;
+		--accent: #ededed;
+		--hoverfg: #ededed;
+		--hoverbg: #0a0a0a;
 	}
 }
 
