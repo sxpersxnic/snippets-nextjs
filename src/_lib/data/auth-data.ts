@@ -1,1 +1,1 @@
-export async function getUserByEmail(email: String) {}
+export async function getUserByEmail(email: string) {}
