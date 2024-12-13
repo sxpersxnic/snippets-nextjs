@@ -15,7 +15,7 @@ export async function createClient(): Promise<SupabaseClient> {
 				getAll() {
 					return cookieStore.getAll();
 				},
-				async setAll(cookiesToSet) {
+				setAll(cookiesToSet) {
 					cookiesToSet.forEach(({ name, value, options }) => {
 						cookieStore.set(name, value, options);
 					});
