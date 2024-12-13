@@ -5,10 +5,10 @@ import 'ui/css/globals.css';
 
 export const metadata: Metadata = {
 	title: {
-		template: '%s | Next-Boilerplate',
-		default: 'Next-Boilerplate',
+		template: '%s | Snippets',
+		default: 'Snippets',
 	},
-	description: 'Next boilerplate template',
+	description: 'Save and share your code snippets!',
 };
 
 export default function RootLayout({ children }: Children): Element {
