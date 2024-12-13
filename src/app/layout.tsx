@@ -1,6 +1,6 @@
-import { Children } from '@/_lib/interfaces/IChildren';
 import AuthButton from '@/_ui/navigation/header-auth';
-import Element from 'lib/types/Element';
+import { Children } from '@/_lib/interfaces/children';
+import Element from '@/_lib/types/element';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import 'ui/css/globals.css';

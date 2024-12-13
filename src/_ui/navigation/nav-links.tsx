@@ -2,7 +2,7 @@
 
 import { UserIcon } from '@heroicons/react/24/outline';
 import { usePathname } from 'next/navigation';
-import Element from 'lib/types/Element';
+import Element from '@/_lib/types/element';
 import Link from 'next/link';
 import React from 'react';
 import clsx from 'clsx';

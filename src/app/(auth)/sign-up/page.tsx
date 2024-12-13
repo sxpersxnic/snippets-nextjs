@@ -4,7 +4,7 @@ import { SmtpMessage } from 'ui/auth/smtp-message';
 import { signUpAction } from 'lib/actions/auth';
 import { Label } from 'ui/components/label';
 import { Input } from 'ui/components/input';
-import Message from 'lib/types/Message';
+import Message from '@/_lib/types/message';
 import Link from 'next/link';
 
 export default async function Signup(props: {

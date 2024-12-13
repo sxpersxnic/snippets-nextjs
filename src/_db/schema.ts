@@ -1,14 +1,17 @@
-import { InferInsertModel, InferSelectModel } from 'drizzle-orm';
-import { pgTable, varchar } from 'drizzle-orm/pg-core';
+import { pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
+import { DEFAULT_PFP } from '@/_lib/defaults';
 import { v4 as uuidv4 } from 'uuid';
 
-export const example = pgTable('example', {
-	id: varchar('id', { length: 36 })
+export const profiles = pgTable('profiles', {
+	id: uuid('id')
 		.primaryKey()
 		.notNull()
+		.unique()
 		.$defaultFn(() => uuidv4()),
-	example: varchar('example', { length: 255 }).unique().notNull(),
+	userId: uuid('user_id').notNull().unique(),
+	username: text('username').notNull().unique(),
+	description: text('description'),
+	photo: text('photo').notNull().default(DEFAULT_PFP),
+	createdAt: timestamp('created_at').defaultNow(),
+	updatedAt: timestamp('updated_at').defaultNow(),
 });
-
-export type NewExample = InferInsertModel<typeof example>;
-export type SelectExample = InferSelectModel<typeof example>;

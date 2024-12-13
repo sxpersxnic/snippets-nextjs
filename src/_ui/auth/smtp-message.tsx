@@ -2,7 +2,7 @@ import {
 	ArrowUpRightIcon,
 	InformationCircleIcon,
 } from '@heroicons/react/24/outline';
-import Element from 'lib/types/Element';
+import Element from '@/_lib/types/element';
 import Link from 'next/link';
 
 export function SmtpMessage(): Element {

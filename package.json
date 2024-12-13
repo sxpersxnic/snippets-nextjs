@@ -13,10 +13,8 @@
 		"prettier:check": "prettier --check .",
 		"deploy": "node ./src/_scripts/deployement/deploy.mjs",
 		"db:setup": "node ./src/_scripts/db/orm.mjs",
-		"db:drizzle:migrate": "node ./src/_scripts/db/drizzle-migrate.mjs",
-		"db:drizzle:push": "node ./src/_scripts/db/drizzle-push.mjs",
-		"db:prisma:migrate": "node ./src/_scripts/db/prisma-migrate.mjs",
-		"db:prisma:push": "node ./src/_scripts/db/prisma-push.mjs",
+		"db:migrate": "node ./src/_scripts/db/drizzle-migrate.mjs",
+		"db:push": "node ./src/_scripts/db/drizzle-push.mjs",
 		"test": "jest",
 		"test:watch": "jets --watch"
 	},

@@ -1,6 +1,6 @@
 'use client';
 
-import { ButtonProps } from 'lib/types/Props';
+import { ButtonProps } from '@/_lib/types/properties';
 import { useFormStatus } from 'react-dom';
 import { Button } from './button';
 

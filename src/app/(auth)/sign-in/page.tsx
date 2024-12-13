@@ -3,8 +3,8 @@ import { FormMessage } from 'ui/forms/form-message';
 import { signInAction } from 'lib/actions/auth';
 import { Input } from 'ui/components/input';
 import { Label } from 'ui/components/label';
-import Message from 'lib/types/Message';
-import Element from 'lib/types/Element';
+import Message from '@/_lib/types/message';
+import Element from '@/_lib/types/element';
 import Link from 'next/link';
 
 export default async function Login(props: {
