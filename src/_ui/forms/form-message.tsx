@@ -1,5 +1,5 @@
-import Element from 'lib/types/Element';
-import Message from 'lib/types/Message';
+import Element from '@/_lib/types/element';
+import Message from '@/_lib/types/message';
 
 export function FormMessage({ message }: { message: Message }): Element {
 	return (

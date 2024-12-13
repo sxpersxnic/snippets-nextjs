@@ -1,10 +1,10 @@
 'use server';
 
 import { createClient } from 'lib/utils/supabase/server';
+import { User } from '@supabase/supabase-js';
 import { encodedRedirect } from 'lib/utils';
 import { redirect } from 'next/navigation';
 import { headers } from 'next/headers';
-import { User } from '@supabase/supabase-js';
 
 export async function signUpAction(formData: FormData) {
 	const email = formData.get('email')?.toString();
@@ -137,13 +137,13 @@ export async function signOutAction() {
 export async function useSession(): Promise<User> {
 	const supabase = await createClient();
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+	const {
+		data: { user },
+	} = await supabase.auth.getUser();
 
-  if (!user) {
-    return redirect('/sign-in');
-  }
+	if (!user) {
+		return redirect('/sign-in');
+	}
 
 	return user;
 }

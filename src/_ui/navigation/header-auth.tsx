@@ -29,7 +29,7 @@ export default async function AuthButton() {
 				size='sm'
 				variant={'outline'}
 			>
-				<Link href='/protected'>Profile</Link>
+				<Link href='/profile'>Profile</Link>
 			</Button>
 			<Button
 				asChild

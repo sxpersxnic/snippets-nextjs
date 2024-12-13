@@ -1,4 +1,4 @@
-import { InputProps } from 'lib/interfaces/Props';
+import { InputProps } from '@/_lib/interfaces/properties';
 import { cn } from 'lib/utils';
 import React from 'react';
 

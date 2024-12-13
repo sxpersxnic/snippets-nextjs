@@ -4,7 +4,7 @@
 
 ### Profile
 
-- [ ] View Profile
+- [x] View Profile
 
 ### Snippets
 
@@ -16,6 +16,6 @@
 
 ### Authentication
 
-- [ ] Sign up
-- [ ] Sign in
-- [ ] Sign out
+- [x] Sign up
+- [x] Sign in
+- [x] Sign out
