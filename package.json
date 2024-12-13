@@ -23,8 +23,6 @@
 	"dependencies": {
 		"@heroicons/react": "^2.2.0",
 		"@next/env": "^15.1.0",
-		"@supabase/ssr": "^0.5.2",
-		"@supabase/supabase-js": "^2.47.6",
 		"clsx": "^2.1.1",
 		"dotenv": "^16.4.7",
 		"drizzle-orm": "^0.38.1",
