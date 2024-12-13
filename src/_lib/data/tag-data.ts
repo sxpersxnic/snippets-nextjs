@@ -1,4 +1,4 @@
-import { UUID } from "../types/UUID";
+import { UUID } from '../types/UUID';
 
 export async function getTagById(id: UUID) {}
 export async function getSnippetsOfTag(id: UUID) {}

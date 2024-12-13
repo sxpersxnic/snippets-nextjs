@@ -1,9 +1,9 @@
-import { UUID } from "lib/types/UUID";
+import { UUID } from 'lib/types/UUID';
 
 export default interface TagModel {
-  id: UUID;
-  name: string;
-  color: string;
-  createdAt: Date;
-  updatedAt: Date;
+	id: UUID;
+	name: string;
+	color: string;
+	createdAt: Date;
+	updatedAt: Date;
 }

@@ -1,3 +1,5 @@
 import React from 'react';
 
-export type Element = React.JSX.Element;
+type Element = React.JSX.Element;
+
+export default Element;

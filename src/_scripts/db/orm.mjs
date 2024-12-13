@@ -9,15 +9,13 @@ const orms = {
 	drizzle: {
 		install: 'bun add drizzle-orm pg dotenv',
 		dev: 'bun add -D drizzle-kit tsx @types/pg',
-		setup: 
-		`
+		setup: `
 		import 'dotenv/config';
 		import { drizzle } from 'drizzle-orm/node-postgres';
 
 		export const db = drizzle(process.env.DATABASE_URL!);`,
 		configFile: './drizzle.config.ts',
-		config: 
-		`
+		config: `
 		import 'dotenv/config';
 		import { defineConfig } from 'drizzle-kit';
 
